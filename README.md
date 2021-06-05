@@ -1,12 +1,16 @@
 # <center> Welcome to webmonk session 2 👋 </center>
 
-> This repo contains the complimentary code, ppts &amp; resources used in webmonk session 2 course for full stack MERN developer
+> This repo contains the complimentary code, PPTs &amp; resources used in webmonk session 2 course for full stack MERN developer
 
 <br>
 
 ## 🏠 [Homepage](https://github.com/open-devs/webmonk-2)
 
 <br>
+
+### [Course Day 1: Introduction to Course](https://github.com/open-devs/webmonk-2/tree/main/Course%20Day%201)
+
+### [Course Day 2: HTML, CSS basics](https://github.com/open-devs/webmonk-2/tree/main/Course%20Day%202)
 
 ## Assignments
 
