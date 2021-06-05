@@ -8,6 +8,8 @@
 
 <br>
 
+## Content
+
 ### [Course Day 1: Introduction to Course](https://github.com/open-devs/webmonk-2/tree/main/Course%20Day%201)
 
 ### [Course Day 2: HTML, CSS basics](https://github.com/open-devs/webmonk-2/tree/main/Course%20Day%202)
