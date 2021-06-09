@@ -16,6 +16,8 @@
 
 ### [Course Day 3: Bootstrap, Git & Github](https://github.com/open-devs/webmonk-2/tree/main/Course%20Day%203)
 
+### [Course Day 4: JS Basics](https://github.com/open-devs/webmonk-2/tree/main/Course%20Day%204)
+
 ## Assignments
 
 1. Survey Form
