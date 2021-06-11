@@ -18,6 +18,8 @@
 
 ### [Course Day 4: JS Basics](https://github.com/open-devs/webmonk-2/tree/main/Course%20Day%204)
 
+### [Course Day 5: JS Intermediate](https://github.com/open-devs/webmonk-2/tree/main/Course%20Day%205)
+
 ## Assignments
 
 1. Survey Form
