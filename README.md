@@ -20,6 +20,8 @@
 
 ### [Course Day 5: JS Intermediate](https://github.com/open-devs/webmonk-2/tree/main/Course%20Day%205)
 
+### [Course Day 5: JS Advanced](https://github.com/open-devs/webmonk-2/tree/main/Course%20Day%206)
+
 ## Assignments
 
 1. Survey Form
