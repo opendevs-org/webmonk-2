@@ -20,11 +20,17 @@
 
 ### [Course Day 5: JS Intermediate](https://github.com/open-devs/webmonk-2/tree/main/Course%20Day%205)
 
-### [Course Day 5: JS Advanced](https://github.com/open-devs/webmonk-2/tree/main/Course%20Day%206)
+### [Course Day 6: JS Advanced](https://github.com/open-devs/webmonk-2/tree/main/Course%20Day%206)
+
+### [Course Day 7: Node.js Basic](https://github.com/open-devs/webmonk-2/tree/main/Course%20Day%207)
 
 ## Assignments
 
-1. Survey Form
+1. Survey Form [Due - 13/06/2021]
+
+2. Blog Project [Due - 13/06/2021]
+
+3. Portfolio [Due - 20/06/2021]
 
 
 ## Usage
