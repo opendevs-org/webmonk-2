@@ -1,0 +1,15 @@
+{
+  "name": "nodejs-starter",
+  "version": "0.0.1",
+  "description": "This project is a simple starter to understand basic nodejs packages",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "keywords": [
+    "starter",
+    "nodejs"
+  ],
+  "author": "open devs",
+  "license": "ISC"
+}
