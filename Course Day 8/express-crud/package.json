@@ -1,0 +1,17 @@
+{
+  "name": "express-crud",
+  "version": "1.0.0",
+  "description": "Basic CRUD Express Server",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "open devs",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.7"
+  }
+}
