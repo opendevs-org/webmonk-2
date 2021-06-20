@@ -20,6 +20,10 @@
 
 ### [Course Day 7: Node.js Basic](https://github.com/open-devs/webmonk-2/tree/main/Course%20Day%207)
 
+### [Course Day 8: Express.js Basic](https://github.com/open-devs/webmonk-2/tree/main/Course%20Day%208)
+
+### [Course Day 9: JWT & Error Handling in Express.js](https://github.com/open-devs/webmonk-2/tree/main/Course%20Day%209)
+
 ## Assignments
 
 1. Survey Form [Due - 13/06/2021]
@@ -28,6 +32,7 @@
 
 3. Portfolio [Due - 20/06/2021]
 
+4. Diary Entry (Backend Only) [Due - 27/06/2021]
 
 ## Usage
 
