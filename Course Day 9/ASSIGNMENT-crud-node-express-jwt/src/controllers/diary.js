@@ -8,7 +8,7 @@ const ifErrorInResSendIt = (res, next) => {
 }
 
 module.exports = {
-    getById: async (req, res, next) => {
+    getAll: async (req, res, next) => {
         ifErrorInResSendIt(res, next);
         try {
             const data = await readFile(dbFilePath);
@@ -18,7 +18,7 @@ module.exports = {
             next();
         }
     },
-    getAll: async (req, res, next) => {
+    getById: async (req, res, next) => {
         ifErrorInResSendIt(res, next);
         try {
             const id = Number(req.params.id);

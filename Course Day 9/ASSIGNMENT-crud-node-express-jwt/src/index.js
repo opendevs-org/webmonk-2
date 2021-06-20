@@ -1,6 +1,5 @@
 const express = require('express');
 const logger = require('morgan');
-const bodyParser = require('body-parser');
 const baseRouter = require('./routes/index');
 
 const app = express();
@@ -8,9 +7,10 @@ const app = express();
 app.set('secretKey', 'hcuahicudhuihfciuhXXYcbyhdbauAAASSSSDdbaiu&22212'); // jwt secret token
 
 app.use(logger('dev'));
-app.use(bodyParser.urlencoded({
+app.use(express.urlencoded({
     extended: false
 }));
+app.use(express.json());
 
 app.use('/api', baseRouter);
 
@@ -39,7 +39,6 @@ app.use((req, res, next) => {
         });
     }
 });
-
 
 app.listen(3000, () =>
     console.log(`Express server currently running on port 3000`)
