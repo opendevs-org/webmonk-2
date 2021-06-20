@@ -1,11 +1,15 @@
 const {
     readFile,
     writeFile
-} = require('../daos/index'); //NOTE: Importing the readFile & writeFile as separate functions
+} = require('../daos/index') //NOTE: Importing the readFile & writeFile as separate functions
+
+const ifErrorInResSendIt = (res, next) => {
+    if (Object.keys(res.locals)) return next();
+}
 
 module.exports = {
     getById: async (req, res, next) => {
-        if (Object.keys(res.locals)) return next();
+        ifErrorInResSendIt(res, next);
         try {
             const data = await readFile(dbFilePath);
             res.send(data);
@@ -15,7 +19,7 @@ module.exports = {
         }
     },
     getAll: async (req, res, next) => {
-        if (Object.keys(res.locals)) return next();
+        ifErrorInResSendIt(res, next);
         try {
             const id = Number(req.params.id);
             const diary = await readFile(dbFilePath);
@@ -34,12 +38,15 @@ module.exports = {
         }
     },
     create: async (req, res, next) => {
+        ifErrorInResSendIt(res, next);
         //NOTE: implement create operation same way as course day 7
     },
     updateById: async (req, res, next) => {
+        ifErrorInResSendIt(res, next);
         //NOTE: implement update operation same way as course day 7
     },
     deleteById: async (req, res, next) => {
+        ifErrorInResSendIt(res, next);
         //NOTE: implement delete operation same way as course day 7
     }
 }
