@@ -7,6 +7,7 @@ const dbFilePath = `${__dirname}../../../data/user-db.json`;
 
 module.exports = {
     authenticate: async (req, res, next) => {
+        if (Object.keys(res.locals)) return next();
         const adminData = await readFile(dbFilePath);
         //NOTE: match if username & password are equal to the ones from user-db.json
         /** if true:
