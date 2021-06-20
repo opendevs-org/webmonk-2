@@ -1,0 +1,45 @@
+const {
+    readFile,
+    writeFile
+} = require('../daos/index'); //NOTE: Importing the readFile & writeFile as separate functions
+
+module.exports = {
+    getById: async (req, res, next) => {
+        if (Object.keys(res.locals)) return next();
+        try {
+            const data = await readFile(dbFilePath);
+            res.send(data);
+        } catch (error) {
+            res.locals.error = error.message;
+            next();
+        }
+    },
+    getAll: async (req, res, next) => {
+        if (Object.keys(res.locals)) return next();
+        try {
+            const id = Number(req.params.id);
+            const diary = await readFile(dbFilePath);
+            const singleEntry = diary.find(entry => entry.id === id);
+
+            if (!singleEntry) {
+                res.locals.status = 404;
+                res.locals.error = `Account with id: ${id} not found!`
+                next();
+            } else {
+                res.send(singleEntry);
+            }
+        } catch (error) {
+            res.locals.error = error.message;
+            next();
+        }
+    },
+    create: async (req, res, next) => {
+        //NOTE: implement create operation same way as course day 7
+    },
+    updateById: async (req, res, next) => {
+        //NOTE: implement update operation same way as course day 7
+    },
+    deleteById: async (req, res, next) => {
+        //NOTE: implement delete operation same way as course day 7
+    }
+}
