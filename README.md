@@ -24,6 +24,8 @@
 
 ### [Course Day 9: JWT & Error Handling in Express.js](https://github.com/open-devs/webmonk-2/tree/main/Course%20Day%209)
 
+### [Course Day 10: Intro to MongoDB](https://github.com/open-devs/webmonk-2/tree/main/Course%20Day%2010)
+
 ## Assignments
 
 1. Survey Form [Due - 13/06/2021]
