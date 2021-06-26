@@ -26,6 +26,8 @@
 
 ### [Course Day 10: Intro to MongoDB](https://github.com/open-devs/webmonk-2/tree/main/Course%20Day%2010)
 
+### [Course Day 11: Intro to Mongoose](https://github.com/open-devs/webmonk-2/tree/main/Course%20Day%2011)
+
 ## Assignments
 
 1. Survey Form [Due - 13/06/2021]
