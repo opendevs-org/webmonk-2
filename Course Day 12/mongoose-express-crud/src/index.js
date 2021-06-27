@@ -1,20 +1,18 @@
 const express = require("express")
+const mongoose = require("mongoose")
+const cors = require("cors")
 const logger = require("morgan")
-const baseRouter = require("./routes/index")
+require("dotenv").config()
+const routes = require("./routes/index")
 
 const app = express()
-
-app.set("secretKey", "hcuahicudhuihfciuhXXYcbyhdbauAAASSSSDdbaiu&22212") // jwt secret token
+const PORT = process.env.PORT || 3000
 
 app.use(logger("dev"))
-app.use(
-  express.urlencoded({
-    extended: false,
-  })
-)
 app.use(express.json())
+app.use(cors())
 
-app.use("/api", baseRouter)
+app.use("/api", routes)
 
 // express doesn't consider not found 404 as an error so we need to handle 404 explicitly
 // handle 404 error
@@ -22,7 +20,7 @@ app.use("*", (req, res, next) => {
   if (Object.keys(res.locals).length) return next()
   else {
     res.locals.status = 404
-    res.locals.error = "NOT FOUND"
+    res.locals.error = "Not found"
     return next()
   }
 })
@@ -39,11 +37,23 @@ app.use((req, res, next) => {
     res.status(500).json({
       message: Object.keys(res.locals).length
         ? res.locals.error
-        : "Something looks wrong :( !!!",
+        : "Something seems wrong :( !!!",
     })
   }
 })
 
-app.listen(3000, () =>
+mongoose.connect(
+  process.env.MONGODB_CONNECTION_URL,
+  {
+    useNewUrlParser: true,
+    useUnifiedTopology: true,
+  },
+  (err) => {
+    if (err) console.error(err)
+    console.log("MONGODB connected successfully")
+  }
+)
+
+app.listen(PORT, () =>
   console.log(`Express server currently running on port 3000`)
 )

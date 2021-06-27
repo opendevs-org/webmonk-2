@@ -28,15 +28,19 @@
 
 ### [Course Day 11: Intro to Mongoose](https://github.com/open-devs/webmonk-2/tree/main/Course%20Day%2011)
 
+### [Course Day 12: Mongoose & Authorization Code](https://github.com/open-devs/webmonk-2/tree/main/Course%20Day%2012)
+
 ## Assignments
 
 1. Survey Form [Due - 13/06/2021]
 
 2. Blog Project [Due - 13/06/2021]
 
-3. Portfolio [Due - 20/06/2021]
+3. Portfolio [Due - 26/06/2021]
 
-4. Diary Entry (Backend Only) [Due - 27/06/2021]
+4. Diary Entry (Backend Only) [Due - 29/06/2021]
+
+5. Diary Entry (Backend Only) [Due - 04/06/2021]
 
 ## Usage
 
