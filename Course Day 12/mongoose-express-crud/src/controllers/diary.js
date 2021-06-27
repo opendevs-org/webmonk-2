@@ -1,5 +1,4 @@
 const Diary = require("../models/diary.model")
-const { find } = require("../daos/index")
 
 const ifErrorInResSendIt = (res, next) => {
   if (Object.keys(res.locals).length) return next()
@@ -9,7 +8,7 @@ module.exports = {
   getAll: async (req, res, next) => {
     ifErrorInResSendIt(res, next)
     try {
-      const data = await find(Diary, {})
+      const data = await Diary.find({})
       res.status(200).send(data)
     } catch (error) {
       res.locals.error = error.message
@@ -19,7 +18,7 @@ module.exports = {
   getByUser: async (req, res, next) => {
     ifErrorInResSendIt(res, next)
     try {
-      const data = await find(Diary, { "user.email": req.user.email })
+      const data = await Diary.find({ "user.email": req.user.email })
       res.status(200).send(data)
     } catch (error) {
       res.locals.error = error.message
@@ -30,11 +29,11 @@ module.exports = {
     ifErrorInResSendIt(res, next)
     try {
       const _id = req.params._id
-      const singleEntry = await find(Diary, { _id })
+      const singleEntry = await Diary.find({ _id })
 
       if (!singleEntry) {
         res.locals.status = 404
-        res.locals.error = `Account with id: ${id} not found!`
+        res.locals.error = `Account with id: ${_id} not found!`
         return next()
       } else {
         res.send(singleEntry)

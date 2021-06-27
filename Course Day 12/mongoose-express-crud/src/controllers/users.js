@@ -2,7 +2,6 @@ const { sign } = require("jsonwebtoken")
 const { genSalt, compare, hash } = require("bcryptjs")
 
 const User = require("../models/users.model")
-const { find } = require("../daos/index")
 
 const ifErrorInResSendIt = (res, next) => {
   if (Object.keys(res.locals).length) return next()
@@ -14,7 +13,7 @@ module.exports = {
     try {
       const { email } = req.user
 
-      const user = await find(User, { email })
+      const user = await User.find({ email })
 
       res.status(200).send({
         email: user[0].email,
