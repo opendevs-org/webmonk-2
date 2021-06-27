@@ -39,7 +39,7 @@ module.exports = {
         return next()
       }
 
-      const user = await User.findOne({ email })
+      const user = await User.findOne({ email }) // NOTE: refactor just like line 17
       if (!user) {
         res.locals.status = 404
         res.locals.error = "No account with such credential exists"
@@ -92,7 +92,7 @@ module.exports = {
         return next()
       }
 
-      const existingUser = await User.findOne({ email })
+      const existingUser = await User.findOne({ email }) // NOTE: refactor just like line 17
 
       if (existingUser) {
         res.locals.status = 400
@@ -114,7 +114,7 @@ module.exports = {
         bio,
       })
 
-      const savedUser = await newUser.save()
+      const savedUser = await newUser.save() // NOTE: refactor just like line 17
 
       res.json(savedUser)
     } catch (error) {

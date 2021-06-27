@@ -65,7 +65,7 @@ module.exports = {
         user,
       })
 
-      newEntry = await newEntry.save()
+      newEntry = await newEntry.save() // NOTE refactor to save as common function just like find above on line 12 & 23
 
       res.status(201).json(newEntry)
     } catch (error) {
@@ -84,7 +84,7 @@ module.exports = {
         return next()
       }
 
-      const updateRes = await Diary.findOneAndUpdate({ _id }, req.body)
+      const updateRes = await Diary.findOneAndUpdate({ _id }, req.body) // NOTE refactor to findOneAndUpdate as common function just like find above on line 12 & 23
 
       res.status(200).json(updateRes)
     } catch (error) {
@@ -103,7 +103,7 @@ module.exports = {
         return next()
       }
 
-      const deletedItem = await Diary.findByIdAndDelete(_id)
+      const deletedItem = await Diary.findByIdAndDelete(_id) // NOTE refactor to findByIdAndDelete as common function just like find above on line 12 & 23
 
       res.status(200).json(deletedItem)
     } catch (error) {
