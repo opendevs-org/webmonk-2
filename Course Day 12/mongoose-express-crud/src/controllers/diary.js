@@ -78,7 +78,7 @@ module.exports = {
     try {
       const _id = req.params._id
 
-      if (!id || !req.body) {
+      if (!_id || !req.body) {
         res.locals.status = 400
         res.locals.error = "Not all fields have been entered"
         return next()
@@ -97,7 +97,7 @@ module.exports = {
     try {
       const _id = req.params._id
 
-      if (!id) {
+      if (!_id) {
         res.locals.status = 404
         res.locals.error = "Not all fields have been entered"
         return next()
