@@ -30,6 +30,8 @@
 
 ### [Course Day 12: Mongoose & Authorization Code](https://github.com/open-devs/webmonk-2/tree/main/Course%20Day%2012)
 
+### [Course Day 13: React State & Props, Counter App](https://github.com/open-devs/webmonk-2/tree/main/Course%20Day%2013)
+
 ## Assignments
 
 1. Survey Form [Due - 13/06/2021]
