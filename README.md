@@ -32,7 +32,9 @@
 
 ### [Course Day 13: React State & Props, Counter App](https://github.com/open-devs/webmonk-2/tree/main/Course%20Day%2013)
 
-### [Course Day 14: React Hooks & Error Boundary Code along with Weather App Starter Code](https://github.com/open-devs/webmonk-2/tree/main/Course%20Day%2013)
+### [Course Day 14: React Hooks & Error Boundary Code along with Weather App Starter Code](https://github.com/open-devs/webmonk-2/tree/main/Course%20Day%2014)
+
+### [Course Day 15: Weather App Complete](https://github.com/open-devs/webmonk-2/tree/main/Course%20Day%2015)
 
 ## Assignments
 
