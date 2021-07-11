@@ -36,6 +36,8 @@
 
 ### [Course Day 15: Weather App Complete](https://github.com/open-devs/webmonk-2/tree/main/Course%20Day%2015)
 
+### [Course Day 16: React routing & Lazy Loading](https://github.com/open-devs/webmonk-2/tree/main/Course%20Day%2016)
+
 ## Assignments
 
 1. Survey Form [Due - 13/06/2021]
