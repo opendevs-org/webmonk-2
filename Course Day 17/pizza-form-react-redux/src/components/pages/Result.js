@@ -7,7 +7,7 @@ const Result = () => {
 
   return (
     <>
-      <pre>{ JSON.stringify(state, null, 2) }</pre>
+      <pre>{JSON.stringify(state.pizza, null, 2)}</pre>
       <Link to="/" className="btn btn-link">Start over</Link>
     </>
   )

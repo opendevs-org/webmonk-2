@@ -49,8 +49,8 @@ export const chooseSauce = (payload) => dispatch => {
 
 import { createSlice } from '@reduxjs/toolkit'
 
-const rootSlice = createSlice({
-  name: "root",
+const pizzaSlice = createSlice({
+  name: "pizza",
   // INITIAL STATE
   initialState: {
     base: "small",
@@ -67,7 +67,7 @@ const rootSlice = createSlice({
   }
 })
 
-export const reducer = rootSlice.reducer
+export const pizzaReducer = pizzaSlice.reducer
 
 // ACTIONS
-export const { chooseBase, chooseCheese, chooseCrust, chooseSauce } = rootSlice.actions
+export const { chooseBase, chooseCheese, chooseCrust, chooseSauce } = pizzaSlice.actions

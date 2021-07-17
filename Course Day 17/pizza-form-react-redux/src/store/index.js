@@ -14,8 +14,12 @@ const Store = createStore(rootReducer);
 export default Store;
 */
 
-import { configureStore } from '@reduxjs/toolkit'
-import { reducer } from './rootSlice'
+import { configureStore } from '@reduxjs/toolkit';
+import { pizzaReducer } from './pizzaSlice';
+
 export const store = configureStore({
-  reducer
+  reducer: {
+    pizza: pizzaReducer,
+    // user: userAddressReducer
+  }
 })
