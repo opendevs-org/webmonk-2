@@ -40,6 +40,8 @@
 
 ### [Course Day 17: React + Redux (State Management)](https://github.com/open-devs/webmonk-2/tree/main/Course%20Day%2017)
 
+### [Course Day 18 & 19: MERN Project](https://github.com/open-devs/webmonk-2/tree/main/MERN-Project)
+
 ## Assignments
 
 1. Survey Form [Due - 13/06/2021]
